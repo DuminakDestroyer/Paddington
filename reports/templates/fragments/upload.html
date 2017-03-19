@@ -1,0 +1,37 @@
+{% extends 'fragments/user_base.html' %}
+{% load static %}
+
+{% block content %}
+
+<div class="col-md-8 col-xs-8 col-md-offset-2 col-xs-offset-2 panel panel-form">
+	<form class="form-inline ">
+		<div class="form-group">
+			<h4 class = "text-center">RETAILERS</h4>
+			<p>Sample Format: </p><img src="{% static 'img/retailer.png'%}" class = "img img-responsive upload-img">
+			<br>
+			<input type="file" id="exampleInputFile">
+		</div>
+		<button type="submit" class="btn btn-primary">Upload</button>
+	</form>
+
+	<form class="form-inline">
+		<div class="form-group">
+			<h4 class = "text-center">DISTRIBUTORS</h4>
+			<p>Sample Format: </p><img src="{% static 'img/distributor.png'%}" class = "img img-responsive upload-img">
+			<br>
+			<input type="file" id="exampleInputFile">
+		</div>
+		<button type="submit" class="btn btn-primary">Upload</button>
+	</form>
+
+	<form class="form-inline">
+		<div class="form-group">
+			<h4 class = "text-center">SERVICE ORDERS</h4>
+			<p>Sample Format: </p><img src="{% static 'img/so.png'%}" class = "img img-responsive upload-img">
+			<br>
+			<input type="file" id="exampleInputFile">
+		</div>
+		<button type="submit" class="btn btn-primary">Upload</button>
+	</form>
+</div>
+{% endblock %}
